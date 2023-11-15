@@ -18,7 +18,12 @@
                 break;
 
             case 'div':
-                $result = $x / $y;
+                if ($y == 0) {
+                    echo("Không thể chia cho 0");
+                }
+                else {
+                    $result = $x / $y;
+                }
                 break;
         }
     }
